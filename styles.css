@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: table;
+    background-color: steelblue;
+    font-family: 'Roboto', sans-serif;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    margin-top: 200px;
+    max-width: 800px;
+    max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px;
+    margin-top: 300px;
+    max-width: 800px;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background: white;
+    overflow: hidden;
+}
+
+.holder {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background: white;
+    overflow: hidden;
+}
+
+.quarter {
+    background-image: url("./img/quarter.png");
+    background-size: 80px 140px;
+    height: 150px;
+    width: 150px;
+    border: solid 3px black;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.eighth {
+    background-image: url("./img/eighth.png");
+    background-size: 130px 130px;
+    height: 150px;
+    width: 150px;
+    border: solid 3px black;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sixteenth {
+    background-image: url("./img/sixteenth.png");
+    background-size: 130px 120px;
+    height: 150px;
+    width: 150px;
+    border: solid 3px black;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.rest {
+    background-image: url("./img/rest.png");
+    background-size: 50px 130px;
+    height: 150px;
+    width: 150px;
+    border: solid 3px black;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovering {
+    /* background-color: #333; */
+    border-color: rgb(0, 0, 0);
+    border-style: dashed;
+    background-image: url('img/quarter.png');
+}
+
+@media(max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
